@@ -19,12 +19,10 @@ public class Resources {
     public static Image eating;
     public static Image thinking;
     
-    public static void init(){
-        try {
-            chopstick = ImageIO.read(new File("C:\\Users\\seeli\\Documents\\NetBeansProjects\\DiningPhilosophers\\src\\diningphilosophers\\Images\\Chopstick.jpg"));
-            ricebowl = ImageIO.read(new File("C:\\Users\\seeli\\Documents\\NetBeansProjects\\DiningPhilosophers\\src\\diningphilosophers\\Images\\Ricebowl.png"));
-            thinking = ImageIO.read(new File("C:\\Users\\seeli\\Documents\\NetBeansProjects\\DiningPhilosophers\\src\\diningphilosophers\\Images\\Thinking.jpg"));
-            eating = ImageIO.read(new File("C:\\Users\\seeli\\Documents\\NetBeansProjects\\DiningPhilosophers\\src\\diningphilosophers\\Images\\Eating.png"));
-        } catch (IOException e) {}
+    public void init() throws IOException{
+            chopstick = ImageIO.read(new File("Images\\Chopstick.jpg"));
+            ricebowl = ImageIO.read(new File("Images\\Ricebowl.png"));
+            thinking = ImageIO.read(new File("Images\\Thinking.jpg"));
+            eating = ImageIO.read(new File("Images\\Eating.png"));
     }
 }

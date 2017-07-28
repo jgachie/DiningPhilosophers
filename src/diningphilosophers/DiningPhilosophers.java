@@ -7,6 +7,7 @@ package diningphilosophers;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 /**
  *
@@ -14,9 +15,10 @@ import java.awt.*;
  */
 public class DiningPhilosophers{
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         //Initialize images into Image objects
-        Resources.init();
+        Resources res = new Resources();
+        res.init();
         
         //Set up window
         JFrame window = new JFrame("Dining Philosophers");
